@@ -1,3 +1,5 @@
-## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
+## KOO-Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
 
 Made with my mentor at [Bloc](http://bloc.io).
+
+Deplyed via Heroku [here.](http://koo-bloccit.herokuapp.com/)
