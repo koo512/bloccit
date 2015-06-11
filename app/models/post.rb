@@ -10,5 +10,6 @@
 #
 
 class Post < ActiveRecord::Base
+  validates :title, uniqueness: {case_sensitive: false}
   has_many :comments
 end

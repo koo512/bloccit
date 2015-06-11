@@ -10,5 +10,6 @@
 #
 
 class Comment < ActiveRecord::Base
+  validates :body, uniqueness: {case_sensitive: false}
   belongs_to :post
 end
