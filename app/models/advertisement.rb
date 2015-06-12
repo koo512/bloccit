@@ -1,15 +1,14 @@
 # == Schema Information
 #
-# Table name: questions
+# Table name: advertisements
 #
 #  id         :integer          not null, primary key
 #  title      :string
-#  body       :text
-#  resolved   :boolean
+#  copy       :text
+#  price      :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Question < ActiveRecord::Base
-  has_many :answers
+class Advertisement < ActiveRecord::Base
 end
