@@ -21,6 +21,7 @@
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #  role                   :string
+#  avatar                 :string
 #
 
 class User < ActiveRecord::Base
@@ -31,6 +32,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
          
   has_many :posts
+  mount_uploader :avatar, AvatarUploader
 
   def admin?
     role == 'admin'

@@ -58,10 +58,18 @@ gem 'pry-rails', :group => :development
 
 gem 'faker'
 
+#Authentication API
 gem 'devise'
 
 gem 'figaro', '1.0'
 
 gem 'pundit'
 
+#Markdown config GEM
 gem 'redcarpet'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'fog'
