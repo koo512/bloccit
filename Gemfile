@@ -47,6 +47,9 @@ group :development, :test do
 
   # Provides a better error page for Rails and other Rack apps. Includes source code inspection, a live REPL and local/instance variable inspection for all stack frames.
   gem 'better_errors'
+
+  # Install a testing framework, RSpec, to write tests.
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :production do
