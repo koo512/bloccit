@@ -50,4 +50,11 @@ class Post < ActiveRecord::Base
     self.user.votes.create(value: 1, post_id: id)
    end
 
+   def save_with_initial_vote
+    ActiveRecord::Base.transaction do
+      save
+      create_vote
+    end
+   end
+
 end
